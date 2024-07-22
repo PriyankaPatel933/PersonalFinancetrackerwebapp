@@ -1,0 +1,218 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+h1 {
+  color: #3a3a05;
+  font-size: 4em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+/* Flex container */
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 120px;
+  flex-wrap: wrap;
+}
+.bt {
+  border: 1px solid black;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.bt:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.bt:active {
+  background-color: #555;
+  color: #fff;
+  border-color: #555;
+}
+
+.bt:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+
+/* Total income card */
+.totalincome {
+  background-color: #ffffff;
+  padding: 40px; /* Increased padding */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(141, 109, 109, 0.1);
+  width: 100%;
+  max-width: 1200px; /* Increased max-width */
+  margin: auto;
+}
+
+.totalincome p {
+  font-size: 3em;
+  margin-bottom: 2px;
+  color: #2b0707;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Salary form */
+.salary {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.salary > div {
+  flex: 1;
+  padding: 0 20px; /* Added padding */
+}
+
+.salary input[type="text"],
+.salary input[type="number"],
+.salary input[type="date"],
+.salary textarea {
+  width: 100%;
+  padding: 20px; /* Increased padding */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1.6em; /* Increased font-size */
+}
+
+.salary textarea {
+  resize: vertical;
+}
+
+/* Table styles */
+.getSal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.getSal tr{
+  color: black;
+}
+.getSal table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.getSal th,
+.getSal td {
+  padding: 20px; /* Increased padding */
+  text-align: center;
+  font-size: 1.8em; /* Increased font-size */
+  border-bottom: 1px solid #1b1818;
+}
+
+.getSal th {
+  background-color: #e0a6a6;
+  font-weight: bold;
+  font-size: 1.5em; /* Increased font-size */
+}
+
+.getSal tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.getSal tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.getSal tbody td:last-child {
+  text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .totalincome {
+    padding: 20px;
+  }
+
+  .salary {
+    flex-direction: column;
+  }
+
+  .salary > div {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .salary input[type="text"],
+  .salary input[type="number"],
+  .salary input[type="date"],
+  .salary textarea {
+    font-size: 1em;
+    padding: 15px;
+  }
+
+  .getSal th,
+  .getSal td {
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  .getSal th {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .totalincome {
+    padding: 10px;
+  }
+
+  .salary input[type="text"],
+  .salary input[type="number"],
+  .salary input[type="date"],
+  .salary textarea {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .getSal th,
+  .getSal td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .getSal th {
+    font-size: 1em;
+  }
+}

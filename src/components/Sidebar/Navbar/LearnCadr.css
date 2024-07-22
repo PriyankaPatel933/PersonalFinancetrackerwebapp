@@ -1,0 +1,73 @@
+.educational-resources {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  
+  .resource-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(109, 202, 21, 0.2);
+  }
+  
+  .card-type {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+
+  .card-type:hover {
+    color: #10f154; /* Change color on hover */
+    transform: scale(1); /* Optional: Scale effect on hover */
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .card-description {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    flex: 1;
+  }
+  
+  .card-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: auto;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card-link:hover {
+    background-color: rgba(236, 9, 85, 0.2);
+    transform: translateY(-2px);
+  }
+  
+
+
+
+
+
+
+  
